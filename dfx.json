@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "pet-finder-backend-backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/pet-finder-backend-backend/main.mo",
+      "type": "motoko"
+    },
+    "pet-finder-backend-frontend": {
+      "dependencies": [
+        "pet-finder-backend-backend"
+      ],
+      "source": [
+        "src/pet-finder-backend-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "pet-finder-backend-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
